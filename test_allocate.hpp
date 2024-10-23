@@ -20,7 +20,6 @@ namespace Alloc
     template<class T>
     inline T* _allocate(size_t n)
     {
-        std::set_new_handler(0);
         T* temp = static_cast<T*>(::operator new(n * sizeof(T)));
         if (temp == nullptr)
         {

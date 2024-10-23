@@ -1,4 +1,5 @@
 #include "test_allocate.hpp"
+#include "stl_construct.hpp"
 #include <iostream>
 
 int main(){
